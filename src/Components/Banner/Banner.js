@@ -29,7 +29,7 @@ axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`).then((response)
         <button className='button'>My list</button>
     </div>
     <h1 className='description'>{movie.overview}</h1>
-  </div>
+    </div>
 <div className="fade_bottom"></div>
     </div>
   )
