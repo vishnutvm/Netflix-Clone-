@@ -1,0 +1,30 @@
+
+
+.linksList {
+    justify-content: flex-start;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.link {
+    display: flex;
+  justify-content: center;
+    flex-basis: 25%;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.link a {
+    color: rgba(255, 255, 255, 0.727);
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:650px){
+    .linksList{
+        flex-direction: column;
+    }
+}

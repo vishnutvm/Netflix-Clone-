@@ -34,3 +34,16 @@ cursor: pointer;
 .smallPoster:hover {
     transform: scale(1.09);
 }
+
+@media screen and (max-width: 480px) {
+    .poster {
+       
+            max-height: 153px;
+        
+        }
+        .smallPoster{
+ 
+            max-height: 53px;
+          
+        }
+}

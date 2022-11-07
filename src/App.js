@@ -3,7 +3,8 @@ import Navbar from './Components/Navbar/Navbar';
 import './App.css'
 import Banner from './Components/Banner/Banner';
 import RowPost from './Components/RowPost/RowPost';
-import {orginals,action,ComedyMovies,HorrorMovies,ActionMovies,RomanceMovies,Documentaries} from './urls'
+import Footer from './Components/Footer/Footer';
+import {orginals,action,ComedyMovies,HorrorMovies,ActionMovies,RomanceMovies} from './urls'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   <RowPost  url={ActionMovies} title="ActionMovies" isSmall/>
   <RowPost  url={RomanceMovies} title="RomanceMovies" isSmall/>
   {/* <RowPost  url={Documentaries} title="Documentaries" isSmall/> */}
+  <Footer/>
  </div>
   );
 }

@@ -13,7 +13,9 @@ useEffect(()=>{
 axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`).then((response)=>{
 
   console.log(response.data.results)
-  setmovie(response.data.results[Math.floor(Math.random()*20)])
+  var val= response.data.results[Math.floor(Math.random()*20)]
+  console.log(val.title)
+  setmovie(val)
 })
 
 },[])
