@@ -11,6 +11,7 @@ const [urlId, seturlId] = useState('')
     
     return () => {
      axios.get(props.url).then((response)=>{
+      console.log("Movies not fount")
       setmovies(response.data.results)
      }).catch((err)=>{
       console.log(err)
