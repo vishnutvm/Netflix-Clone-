@@ -44,11 +44,14 @@ axios.get(`movie/${id}/videos?api_key=${API_KEY}&language=en-US`).then((response
 })
   }
   return (
+
     <div className='row'>
         <h2>{props.title}</h2>
         <div className="posters">
         {
+          
           movies.map((movie,index)=>{
+            console.log(movie)
             return(
                 <img onClick={()=>{
 handleMovie(movie.id)
