@@ -4,6 +4,7 @@ import './RowPost.css'
 import axios from '../../axios'
 import {imageUrl,API_KEY} from '../../constants/constents'
 function RowPost(props) {
+  console.log("row working")
   const [movies, setmovies] = useState([])
 const [urlId, seturlId] = useState('')
   useEffect(() => {
